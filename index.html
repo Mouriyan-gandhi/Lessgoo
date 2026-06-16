@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mouriyan Gandhi — AI/ML Engineer & Full-Stack Developer</title>
+<meta name="description" content="Mouriyan Gandhi — AI/ML Engineer & Full-Stack Developer. Agentic AI, RAG, computer vision & products that ship. Guided by anekāntavāda and the balance of yin & yang.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="locked">
+
+<!-- yin-yang sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="yy" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="49" fill="var(--ink)"/>
+    <path d="M50,1 a49,49 0 0,1 0,98 a24.5,24.5 0 0,1 0,-49 a24.5,24.5 0 0,0 0,-49 z" fill="var(--accent)"/>
+    <circle cx="50" cy="25.5" r="7" fill="var(--accent)"/>
+    <circle cx="50" cy="74.5" r="7" fill="var(--ink)"/>
+    <circle cx="50" cy="50" r="48.5" fill="none" stroke="var(--line-strong)" stroke-width="1"/>
+  </symbol>
+</svg>
+
+<!-- ===== Boot / terminal ===== -->
+<div id="boot">
+  <div class="boot-inner">
+    <div id="boot-out"></div>
+    <div class="boot-bar" id="boot-bar"><i></i></div>
+    <div class="boot-pct"><span id="boot-pct"><span>0%</span></span><span>mouriyan.dev</span></div>
+  </div>
+</div>
+
+<!-- ===== Nav ===== -->
+<header class="nav">
+  <a href="#top" class="brand" data-cursor>
+    <svg class="yy" data-spin data-base="0"><use href="#yy"/></svg>
+    Mouriyan&nbsp;Gandhi
+  </a>
+  <nav class="nav-links">
+    <a href="#work"><span class="idx">01</span>Work</a>
+    <a href="#philosophy"><span class="idx">02</span>Philosophy</a>
+    <a href="#about"><span class="idx">03</span>About</a>
+    <a href="#contact"><span class="idx">04</span>Contact</a>
+  </nav>
+  <div class="nav-right">
+    <div class="clock"><span class="dot"></span><span id="clock-time">--:--:--</span></div>
+    <button class="sound-toggle" id="sound-toggle" aria-label="Toggle ambient sound" aria-pressed="false" title="Sound on / off">
+      <span class="eq"><i></i><i></i><i></i><i></i></span>
+    </button>
+    <button class="theme-toggle" aria-label="Toggle yin / yang theme" title="Yin / Yang">
+      <svg><use href="#yy"/></svg>
+    </button>
+    <button class="menu-btn" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-meta">
+          <span><b>(01)</b> AI/ML Engineer · Full-Stack Dev</span>
+          <span><b>◷</b> Based in Chennai, IN</span>
+          <span style="color:var(--jade)"><b>●</b> Open to work</span>
+        </div>
+        <h1>
+          <span class="ln"><span>Mouriyan</span></span>
+          <span class="ln"><span>Gandhi<span class="grow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 18 18 6M9 6h9v9"/></svg></span></span></span>
+        </h1>
+        <div class="hero-role">&gt; building agentic AI systems</div>
+        <div class="hero-cta">
+          <a href="#work" class="btn primary" data-magnetic="0.35"><span class="lbl">View Work
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a href="assets/Mouriyan_Gandhi_Resume.pdf" target="_blank" rel="noopener" class="btn ghost" data-magnetic="0.3"><span class="lbl">Résumé
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg></span></a>
+        </div>
+      </div>
+      <div class="hero-photo" data-cursor>
+        <div class="frame">
+          <img src="assets/mouriyan-portrait.jpg" alt="Mouriyan Gandhi">
+        </div>
+        <div class="photo-tag"><b>MG</b> · Chennai · 2026</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-yy"><svg data-spin data-base="0"><use href="#yy"/></svg></div>
+  <div class="scroll-hint"><span class="ln"></span>Scroll</div>
+</section>
+
+<!-- ===== Marquee ===== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Agentic&nbsp;AI <i>✦</i> RAG <i>✦</i> Next.js <i>✦</i> Computer&nbsp;Vision <i>✦</i> <span class="dim">LangGraph</span> <i>✦</i> FastAPI <i>✦</i> Full-Stack <i>✦</i> </span>
+    <span>Agentic&nbsp;AI <i>✦</i> RAG <i>✦</i> Next.js <i>✦</i> Computer&nbsp;Vision <i>✦</i> <span class="dim">LangGraph</span> <i>✦</i> FastAPI <i>✦</i> Full-Stack <i>✦</i> </span>
+  </div>
+</div>
+
+<!-- ===== Shloka band ===== -->
+<section class="shloka" data-lang="sa">
+  <div class="shloka-bg" aria-hidden="true">
+    <img src="assets/krishna-arjuna.jpg" alt="">
+    <div class="shloka-veil"></div>
+  </div>
+  <div class="shloka-mark shloka-mark-l">॥</div>
+  <div class="shloka-mark shloka-mark-r">॥</div>
+  <div class="wrap">
+    <div class="shloka-inner">
+      <div class="eyebrow reveal" style="justify-content:center">The verse I carry · श्रीमद्भगवद्गीता</div>
+      <div class="shloka-stage reveal reveal-d1">
+        <div class="shloka-face shloka-sa">
+          <p class="shloka-text-sa">यदा यदा हि धर्मस्य ग्लानिर्भवति भारत।<br>
+          अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्॥<br>
+          परित्राणाय साधूनां विनाशाय च दुष्कृताम्।<br>
+          धर्मसंस्थापनार्थाय सम्भवामि युगे युगे॥</p>
+        </div>
+        <div class="shloka-face shloka-en">
+          <p class="shloka-text-en">“Whenever <span class="hl">dharma declines</span> and unrighteousness rises, I manifest myself — to protect the good, to dissolve what is destructive, and to <span class="hl">re-establish balance</span>. I am born, age after age.”</p>
+        </div>
+      </div>
+      <div class="shloka-controls reveal reveal-d2">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <span class="thumb"></span>
+          <button data-lang="sa" class="on">संस्कृत</button>
+          <button data-lang="en">English</button>
+        </div>
+        <div class="shloka-ref">Bhagavad Gītā · 4.7–4.8</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About (scrollytelling) ===== -->
+<section class="scrolly" id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal"><div class="sec-num">(03) — Who · about</div><h2>One person,<br><em>many readings</em>.</h2></div>
+      <p class="sec-desc reveal reveal-d1">Anekāntavāda, turned on myself — scroll, and the same person resolves four different ways.</p>
+    </div>
+  </div>
+  <div class="scrolly-track" id="about-track">
+    <div class="scrolly-pin">
+      <div class="wrap">
+        <div class="scrolly-cols">
+          <div class="scrolly-photo" data-cursor>
+            <img src="assets/mouriyan-about.jpg" alt="Mouriyan Gandhi">
+            <div class="lens-overlay"></div>
+            <div class="lens-word" id="lens-word">ENGINEER</div>
+            <span class="ph-float ph-float-1"><b>陰陽</b> · balance</span>
+            <span class="ph-float ph-float-2">Chennai · <b>IN</b></span>
+          </div>
+          <div class="scrolly-content">
+            <div class="lens-prog" id="lens-prog">
+              <div class="lp-fill" id="lp-fill"></div>
+              <button class="lp-item on" data-lens="0"><span class="lp-n">01</span><span class="lp-l">Engineer</span></button>
+              <button class="lp-item" data-lens="1"><span class="lp-n">02</span><span class="lp-l">Builder</span></button>
+              <button class="lp-item" data-lens="2"><span class="lp-n">03</span><span class="lp-l">Designer</span></button>
+              <button class="lp-item" data-lens="3"><span class="lp-n">04</span><span class="lp-l">Student</span></button>
+            </div>
+            <div class="lens-num"><span id="lens-num">01</span><i>/ 04</i></div>
+            <h3 class="lens-title" id="lens-title">The <em>Engineer</em></h3>
+            <p class="lens-out" id="lens-out">I architect <span class="hl">agentic AI systems</span> — RAG pipelines, multi-agent orchestration, vector retrieval — and care that they're correct, observable and quick. <span class="mut">B.Tech CSE (AI &amp; ML) at SRM, Chennai.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap about-stats-wrap">
+    <div class="stats reveal reveal-d1">
+      <div class="stat"><div class="n"><span class="cv" data-count="9.43" data-dec="2">9.43</span><em>/10</em></div><div class="l">CGPA · SRMIST</div></div>
+      <div class="stat"><div class="n"><span class="cv" data-count="20" data-dec="0">20</span><em>+</em></div><div class="l">Hackathons entered</div></div>
+      <div class="stat"><div class="n"><span class="cv" data-count="3" data-dec="0">3</span><em>×</em></div><div class="l">Ideathons won</div></div>
+      <div class="stat"><div class="n"><span class="cv" data-count="1000" data-dec="0">1000</span><em>+</em></div><div class="l">Users shipped to</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Philosophy ===== -->
+<section class="pad" id="philosophy" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal">
+        <div class="sec-num">(02) — Operating system</div>
+        <h2>Two <em>truths</em>,<br>held at once.</h2>
+      </div>
+      <p class="sec-desc reveal reveal-d1">The lenses behind how I think, design and debug. One says no single view is the whole picture. The other says nothing exists without its opposite.</p>
+    </div>
+    <div class="philo-grid">
+      <!-- Anekantavada -->
+      <article class="philo-card reveal" data-cursor>
+        <div class="kanji">अनेक</div>
+        <div class="ph-eye">Jain · Anekāntavāda</div>
+        <h3>Many-sidedness</h3>
+        <div class="ph-sub">अनेकान्तवाद · the non-one-sided</div>
+        <p>Reality is too complex for any single viewpoint to capture whole. Every truth is partial, conditional — true <em>from somewhere</em>. So I stay humble in argument and hold space for the view I can't yet see.</p>
+        <figure class="ane-plate">
+          <div class="plate-frame">
+            <span class="plate-tag">अनेकान्तवाद · plate</span>
+            <img src="assets/anekantavada-elephant.jpg" alt="Anekāntavāda — seven blind men examining an elephant, each grasping a different part">
+          </div>
+          <figcaption>
+            <span class="cap-sa">एकान्तवादि-सप्तान्धपुरुषाः</span>
+            Seven who each touch one part — a wall, a rope, a fan, a pillar — and each swears they hold the whole beast. <b>None is wrong. None is complete.</b>
+          </figcaption>
+        </figure>
+      </article>
+      <!-- Yin Yang -->
+      <article class="philo-card reveal reveal-d1" data-cursor>
+        <div class="kanji">陰陽</div>
+        <div class="ph-eye">Japanese · In-yō</div>
+        <h3>The balance<br>of opposites</h3>
+        <div class="ph-sub">陰陽 · yin &amp; yang</div>
+        <p>Complementary, interconnected forces — stillness &amp; motion, dark &amp; light, yielding &amp; striking — turning into one another like night into day. The work is knowing <em>when to act</em> and when to reflect.</p>
+        <div class="yy-card-body">
+          <div class="yy-stage">
+            <div class="yy-spin"><svg data-spin data-base="0"><use href="#yy"/></svg></div>
+          </div>
+          <div class="ph-tags">
+            <b>陰 yin · yielding</b><b>陽 yang · active</b><b>dark ⇄ light</b><b>rest ⇄ motion</b>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Work ===== -->
+<section class="pad" id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal">
+        <div class="sec-num">(01) — Selected work</div>
+        <h2>Things I've <em>built</em>.</h2>
+      </div>
+      <p class="sec-desc reveal reveal-d1">AI-first products that go from idea to deployed. Real users, real pipelines, real stakes.</p>
+    </div>
+    <div class="projects">
+      <a class="proj reveal" href="https://github.com/Mouriyan-gandhi" target="_blank" rel="noopener">
+        <div class="p-num">01</div>
+        <div class="p-name"><span class="p-kind">Marketplace · Next.js</span>DoItForMe</div>
+        <div class="p-desc">A campus freelance &amp; services marketplace — AI-powered KYC (Gemini Vision), two-layer moderation, escrow payments, real-time chat &amp; automated payouts. Scaled to 1000+ users / 6000+ visits.
+          <div class="p-stack"><span>Next.js</span><span>Supabase</span><span>PostgreSQL</span><span>Cashfree</span><span>Gemini Vision</span><span>DistilBERT</span></div>
+        </div>
+        <div class="p-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg></div>
+      </a>
+      <a class="proj reveal" href="https://github.com/Mouriyan-gandhi" target="_blank" rel="noopener">
+        <div class="p-num">02</div>
+        <div class="p-name"><span class="p-kind">Public Health · RAG</span>Sanjeevani</div>
+        <div class="p-desc">Waterborne-disease outbreak prediction — fuses IoT, hospital reports, ASHA inputs &amp; satellite data. Multilingual RAG chatbot with voice, plus XGBoost / Random-Forest outbreak pipelines &amp; auto-alerts.
+          <div class="p-stack"><span>FastAPI</span><span>LangChain</span><span>ChromaDB</span><span>XGBoost</span><span>HuggingFace</span></div>
+        </div>
+        <div class="p-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg></div>
+      </a>
+      <a class="proj reveal" href="https://github.com/Mouriyan-gandhi" target="_blank" rel="noopener">
+        <div class="p-num">03</div>
+        <div class="p-name"><span class="p-kind">Computer Vision · YOLO</span>AI Retail Intelligence</div>
+        <div class="p-desc">Multi-camera smart-store surveillance — real-time threat &amp; theft detection via trajectory, dwell-time &amp; velocity heuristics, fire/smoke detection, AI insights and live dashboards.
+          <div class="p-stack"><span>YOLO</span><span>OpenCV</span><span>React</span><span>Supabase</span><span>Gemini AI</span></div>
+        </div>
+        <div class="p-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Experience + Skills ===== -->
+<section class="pad" style="background:var(--bg-2);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal"><div class="sec-num">— Trajectory</div><h2>Where I've <em>shipped</em>.</h2></div>
+      <p class="sec-desc reveal reveal-d1">A career, read like a commit history — newest at the top, still pushing.</p>
+    </div>
+    <div class="gitlog-cmd reveal reveal-d1">$ git log --author=<b>"mouriyan"</b> --branch shipped<span class="cur"></span></div>
+    <div class="gitlog">
+      <article class="commit reveal">
+        <div class="commit-graph"><span class="commit-node"></span></div>
+        <div class="commit-body">
+          <div class="commit-hash">commit <span class="h">a7f3c2e</span><span class="commit-ref head">HEAD → now</span><span class="commit-ref live">running</span></div>
+          <div class="commit-date">Date: May 2026 — Present · Chennai</div>
+          <h4 class="commit-title"><span class="feat">feat:</span>Multi-agent content platform</h4>
+          <div class="commit-org">@ <b>BitCot Technologies</b> · Software Engineering Intern</div>
+          <ul class="commit-diff">
+            <li>Engineered a multi-agent content engine (FastAPI · Celery · Redis · Supabase · Claude) — cut writers' production time <b>~60–70%</b>.</li>
+            <li>Built agents for trend discovery, ICP validation, research grounding, SEO &amp; auto-regeneration — projected <b>+15–25%</b> lead gen.</li>
+            <li>Shipped an AI image-validation pipeline (web search + vision) catching <b>100%</b> of broken / off-brief visuals pre-review.</li>
+          </ul>
+          <div class="commit-stack"><span class="lbl">stack:</span><span>FastAPI</span><span>Celery</span><span>Redis</span><span>Supabase</span><span>Claude API</span></div>
+        </div>
+      </article>
+      <article class="commit reveal reveal-d1">
+        <div class="commit-graph"><span class="commit-node"></span></div>
+        <div class="commit-body">
+          <div class="commit-hash">commit <span class="h">3b9e1d4</span><span class="commit-ref">origin/ekagraha</span></div>
+          <div class="commit-date">Date: May 2025 — Apr 2026 · Remote</div>
+          <h4 class="commit-title"><span class="feat">feat:</span>Purchase-bills &amp; masters modules</h4>
+          <div class="commit-org">@ <b>Ekagraha</b> · Full-Stack / Frontend Developer</div>
+          <ul class="commit-diff">
+            <li>Built core billing &amp; masters modules for a next-gen accounting platform with <b>Next.js 15</b>, React 19, Zustand &amp; TanStack Query.</li>
+            <li>Integrated REST APIs &amp; validation flows across GST, banking, inventory &amp; taxation workflows.</li>
+          </ul>
+          <div class="commit-stack"><span class="lbl">stack:</span><span>Next.js 15</span><span>React 19</span><span>Zustand</span><span>TanStack Query</span></div>
+        </div>
+      </article>
+      <article class="commit reveal reveal-d2">
+        <div class="commit-graph"><span class="commit-node"></span></div>
+        <div class="commit-body">
+          <div class="commit-hash">commit <span class="h">f0c82a7</span><span class="commit-ref">origin/community</span></div>
+          <div class="commit-date">Date: 2024 — Present · SRM &amp; beyond</div>
+          <h4 class="commit-title"><span class="feat">feat:</span>Talks, creatives &amp; events</h4>
+          <div class="commit-org">@ <b>Aaruush · CodeNex · Liftoff · Shaastra IIT-M</b></div>
+          <ul class="commit-diff">
+            <li>Delivered sessions on AI agents &amp; workflow automation (n8n) to <b>150+</b> students.</li>
+            <li>Creatives, product &amp; events roles across SRM's biggest student bodies.</li>
+          </ul>
+          <div class="commit-stack"><span class="lbl">stack:</span><span>n8n</span><span>Public speaking</span><span>Design</span><span>Events</span></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="sec-head" style="margin-top:120px">
+      <div class="reveal"><div class="sec-num">— Toolkit</div><h2>The <em>stack</em>.</h2></div>
+      <div class="stack-status reveal reveal-d1"><span class="d"></span>/// <b>system_optimized</b></div>
+    </div>
+    <div class="stack reveal reveal-d1" id="stack"></div>
+  </div>
+</section>
+
+<!-- ===== Achievements ===== -->
+<section class="pad" id="achievements">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal"><div class="sec-num">— Receipts</div><h2>Wins &amp; <em>proof</em>.</h2></div>
+      <p class="sec-desc reveal reveal-d1">20+ national hackathons &amp; ideathons. A habit of finishing near the top.</p>
+    </div>
+    <div class="ach-list">
+      <div class="ach reveal"><div class="a-rank">#1</div><h4>Hack2Future · IIIT Dharwad</h4><p>1st in problem-statement category · Top 10 teams out of 3000+ participants.</p></div>
+      <div class="ach reveal reveal-d1"><div class="a-rank">#2</div><h4>Foundathon 3.0</h4><p>2nd overall &amp; 1st in the problem-statement track.</p></div>
+      <div class="ach reveal reveal-d2"><div class="a-rank">40</div><h4>Smart India Hackathon 2025</h4><p>Qualified — selected among the top 40 teams in the college internal round.</p></div>
+      <div class="ach reveal"><div class="a-rank">3×</div><h4>Ideathon champion</h4><p>3+ ideathon wins &amp; multiple Top-5 finishes across 20+ events.</p></div>
+      <div class="ach reveal reveal-d1"><div class="a-rank">150<span style="font-size:24px">+</span></div><h4>Students mentored</h4><p>Sessions on AI Agents &amp; n8n workflow automation.</p></div>
+      <div class="ach reveal reveal-d2"><div class="a-rank">★</div><h4>Certifications</h4><p>BNY Joint Cert · IBM Quantum Enigmas (2026) · Summer Analytics, IIT Guwahati (2025).</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section class="pad contact" id="contact" style="background:var(--bg-2);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <div class="eyebrow reveal">(04) — Say hello</div>
+        <h2 class="reveal reveal-d1" style="margin-top:18px">Let's<br>build<em>.</em></h2>
+        <p class="contact-sub reveal reveal-d2">Got an idea that needs an AI brain and a clean front-end? Or just want to argue about philosophy? My inbox is open.</p>
+        <div class="contact-links reveal reveal-d2">
+          <a class="c-link" href="mailto:gandhimouriyan1234@gmail.com">Email <span class="cl-r">gandhimouriyan1234@gmail.com ↗</span></a>
+          <a class="c-link" href="https://github.com/Mouriyan-gandhi" target="_blank" rel="noopener">GitHub <span class="cl-r">@Mouriyan-gandhi ↗</span></a>
+          <a class="c-link" href="https://www.linkedin.com/in/mouriyan-gandhi/" target="_blank" rel="noopener">LinkedIn <span class="cl-r">in/mouriyan-gandhi ↗</span></a>
+          <a class="c-link" href="assets/Mouriyan_Gandhi_Resume.pdf" target="_blank" rel="noopener">Résumé <span class="cl-r">PDF ↗</span></a>
+        </div>
+      </div>
+      <form class="form reveal reveal-d1" id="contact-form" novalidate>
+        <div class="field">
+          <label for="f-name">Your name</label>
+          <input id="f-name" type="text" placeholder="Arjuna" autocomplete="name">
+          <div class="msg">// tell me who you are</div>
+        </div>
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input id="f-email" type="email" placeholder="you@domain.com" autocomplete="email">
+          <div class="msg">// that email doesn't look right</div>
+        </div>
+        <div class="field">
+          <label for="f-message">Message</label>
+          <textarea id="f-message" placeholder="What are we building?"></textarea>
+          <div class="msg">// say a little more</div>
+        </div>
+        <button type="submit" class="btn primary form-submit" data-magnetic="0.3"><span class="lbl">Send it
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+        <div class="form-ok">✓ &nbsp;Opening your mail client — let's talk soon.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-big reveal">Mouriyan<span class="grow grow-sm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 18 18 6M9 6h9v9"/></svg></span></div>
+      <div class="foot-meta reveal reveal-d1">
+        <a href="mailto:gandhimouriyan1234@gmail.com">gandhimouriyan1234@gmail.com</a>
+        <a href="https://github.com/Mouriyan-gandhi" target="_blank" rel="noopener">github.com/Mouriyan-gandhi</a>
+        <a href="https://www.linkedin.com/in/mouriyan-gandhi/" target="_blank" rel="noopener">linkedin.com/in/mouriyan-gandhi</a>
+        <span>Chennai, Tamil Nadu · IN</span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Mouriyan Gandhi — designed &amp; coded by me.</span>
+      <span>balance in the build <svg class="yy" data-spin data-base="0"><use href="#yy"/></svg> धर्म · 陰陽</span>
+    </div>
+  </div>
+</footer>
+
+<script src="audio.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

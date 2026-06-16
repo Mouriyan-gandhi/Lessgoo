@@ -1,0 +1,6 @@
+.DS_Store
+.thumbnail
+Thumbs.db
+node_modules/
+.vercel/
+uploads/
