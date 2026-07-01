@@ -160,8 +160,21 @@
   addEventListener('scroll',onScroll,{passive:true}); onScroll();
 
   const menuBtn=$('.menu-btn'), navList=$('.nav-links');
-  if(menuBtn){ menuBtn.addEventListener('click',()=>navList.classList.toggle('open')); 
-    $$('.nav-links a').forEach(a=>a.addEventListener('click',()=>navList.classList.remove('open'))); }
+  if(menuBtn){ 
+    const svgMenu = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h18M3 12h18M3 17h18"/></svg>';
+    const svgClose = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 18L18 6M6 6l12 12"/></svg>';
+    menuBtn.addEventListener('click',()=>{
+      const isOpen = navList.classList.toggle('open');
+      menuBtn.innerHTML = isOpen ? svgClose : svgMenu;
+      document.body.classList.toggle('locked', isOpen);
+    }); 
+    $$('.nav-links a').forEach(a=>a.addEventListener('click',()=>{
+      navList.classList.remove('open');
+      menuBtn.innerHTML = svgMenu;
+      const boot = $('#boot');
+      if (!boot || boot.classList.contains('done')) document.body.classList.remove('locked');
+    })); 
+  }
 
   // smooth anchor
   $$('a[href^="#"]').forEach(a=>{
